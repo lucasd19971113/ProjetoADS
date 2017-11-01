@@ -14,7 +14,7 @@ def buscar_usuario(cpf):
     else:
         pos = ind[0][0]
 
-        print('CPF: ', clientes[pos][0])
+        print('\nCPF: ', clientes[pos][0])
         print('Nome: ', clientes[pos][1])
         print('E-mail: ', clientes[pos][2])
         print('Senha: ', clientes[pos][3],'\n')

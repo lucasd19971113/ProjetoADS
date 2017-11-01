@@ -6,7 +6,6 @@ def _gerar_codigo():
     codigo_geral_i += 1
     return codigo_geral_i
 
-
 def imprimir_filme(filme):
     print("Código: ", filme[0])
     print("Título: ", filme[1])
@@ -55,7 +54,7 @@ def menu_buscar():
         if filmes == False:
             print("Filme nao encontrado\n")
             op = int(input((
-                            "(1) Buscar mais filmes por Gênero\n" +
+                            "\n(1) Buscar mais filmes por Gênero\n" +
                             "(0) Sair \n" +
                             "Digite sua escolha: ")))
             while op != 1 and op != 0:
@@ -65,7 +64,7 @@ def menu_buscar():
         else:
             print("Filme encontrado\n")
             op = int(input((
-                            "(1) Buscar mais filmes por Gênero\n" +
+                            "\n(1) Buscar mais filmes por Gênero\n" +
                             "(0) Sair \n" +
                             "Digite sua escolha: ")))
 
@@ -81,7 +80,7 @@ def menu_buscar_c():
         if filmes == False:
             print("Filme nao encontrado\n")
             op = int(input((
-                "(1) Buscar mais filmes por Código\n" +
+                "\n(1) Buscar mais filmes por Código\n" +
                 "(0) Sair \n" +
                 "Digite sua escolha: ")))
             while op != 1 and op != 0:
@@ -91,7 +90,7 @@ def menu_buscar_c():
         else:
             print("Filme encontrado\n")
             op = int(input((
-                "(1) Buscar mais filmes por Código\n" +
+                "\n(1) Buscar mais filmes por Código\n" +
                 "(0) Sair \n" +
                 "Digite sua escolha: ")))
 

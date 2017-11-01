@@ -1,7 +1,7 @@
 from logica import usuario
 
 def imprimir_cliente(cliente):
-    print("CPF: ", cliente[0])
+    print("\nCPF: ", cliente[0])
     print("Nome: ", cliente[1])
     print("E-mail: ", cliente[2])
     print("Senha: ", cliente[3])
@@ -52,7 +52,7 @@ def menu_buscar():
         if clientes == False:
             print("Cliente nao encontrado\n")
             op = int(input(("\n----------------\n" +
-            "(1) Realizar nova busca\n" +
+            "\n(1) Realizar nova busca\n" +
             "(0) Sair \n" +
             "\n----------------\n"+
             "Digite sua escolha: ")))
@@ -63,7 +63,7 @@ def menu_buscar():
         else:
             print("Cliente encontrado\n")
             op = int(input(("\n----------------\n" +
-                            "(1) Realizar nova busca\n" +
+                            "\n(1) Realizar nova busca\n" +
                             "(0) Sair \n" +
                             "\n----------------\n"+
                             "Digite sua escolha: ")))
@@ -81,13 +81,13 @@ def menu_remover():
         ind = usuario.remover_usuario(cpf)
         if ind == False:
             print("Cliente nao encontrado \n")
-            op = int(input("Tentar de novo? \n(1) Sim\n(0) Não "))
+            op = int(input("\nTentar de novo? \n(1) Sim\n(0) Não "))
             if op == 0:
                 run = False
         else:
             print("Cliente removido \n")
             op = int(input(("\n----------------\n" +
-                            "(1) Remover mais clientes\n" +
+                            "\n(1) Remover mais clientes\n" +
                             "(0) Sair \n" +
                             "\n----------------\n"+
                             "Digite sua escolha: ")))

@@ -24,8 +24,8 @@ def buscar_filme_g(genero):
 
         pos = ind[0][0]
         print("\n----------------\n")
-        print("Filme Por Gênero")
-        print('Código: ', filmes[pos][0])
+        print("Filme Por Gênero\n")
+        print('\nCódigo: ', filmes[pos][0])
         print('Título: ', filmes[pos][1])
         print('genero: ', filmes[pos][2])
         print('ano: ', filmes[pos][3])
