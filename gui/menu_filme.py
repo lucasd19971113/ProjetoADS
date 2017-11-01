@@ -12,6 +12,7 @@ def imprimir_filme(filme):
     print("Genero: ", filme[2])
     print("Ano: ", filme[3])
     print()
+    print()
 
 
 def menu_adicionar():
@@ -150,6 +151,7 @@ def mostrar_menu():
         elif (op == 0):
             run = False
 
+#Chamar menu;
 if __name__ == "__main__":
     principal()
 

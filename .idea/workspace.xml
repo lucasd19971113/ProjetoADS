@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="4ad86b61-5923-49a4-955a-c66f97b93e7d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/menu_filme.py" afterPath="$PROJECT_DIR$/gui/menu_filme.py" />
@@ -8,6 +9,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logica/filme.py" afterPath="$PROJECT_DIR$/logica/filme.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logica/usuario.py" afterPath="$PROJECT_DIR$/logica/usuario.py" />
     </list>
+=======
+    <list default="true" id="4ad86b61-5923-49a4-955a-c66f97b93e7d" name="Default" comment="" />
+>>>>>>> 5931f8b122ae0ee08eba6820c48b37f61262e2bf
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file leaf-file-name="menu_filme.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/menu_filme.py">
@@ -58,6 +63,9 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+>>>>>>> 5931f8b122ae0ee08eba6820c48b37f61262e2bf
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,8 +87,13 @@
         <option value="$PROJECT_DIR$/principal.py" />
         <option value="$PROJECT_DIR$/logica/usuario.py" />
         <option value="$PROJECT_DIR$/gui/menu_usuario.py" />
-        <option value="$PROJECT_DIR$/gui/menu_filme.py" />
         <option value="$PROJECT_DIR$/logica/filme.py" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/logica/usuario.py" />
+        <option value="$PROJECT_DIR$/principal.py" />
+        <option value="$PROJECT_DIR$/gui/menu_filme.py" />
+>>>>>>> 5931f8b122ae0ee08eba6820c48b37f61262e2bf
       </list>
     </option>
   </component>
@@ -117,17 +130,7 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="ProjetoADS" type="cbb8eebc:String" user="ProjetoADS" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ProjetoADS" type="cbb8eebc:String" user="ProjetoADS" />
               <item name="gui" type="cbb8eebc:String" user="gui" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ProjetoADS" type="cbb8eebc:String" user="ProjetoADS" />
-              <item name="logica" type="cbb8eebc:String" user="logica" />
             </path>
           </expand>
           <select />
@@ -158,7 +161,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -310,6 +313,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
     <editor active="true" />
     <layout>
@@ -317,6 +321,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28482002" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32130778" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> 5931f8b122ae0ee08eba6820c48b37f61262e2bf
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -366,22 +378,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/logica/filme.py" />
     <entry file="file://$PROJECT_DIR$/Projeto/principal.py" />
     <entry file="file://$PROJECT_DIR$/Projeto/gui/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Projeto/gui/menu_filme.py" />
     <entry file="file://$PROJECT_DIR$/Projeto" />
     <entry file="file://$PROJECT_DIR$/gui/menu_geral.py">
+=======
+    <entry file="file://$PROJECT_DIR$/gui/__init__.py">
+>>>>>>> 5931f8b122ae0ee08eba6820c48b37f61262e2bf
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/principal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/gui/menu_filme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logica/filme.py" />
+    <entry file="file://$PROJECT_DIR$/Projeto/principal.py" />
+    <entry file="file://$PROJECT_DIR$/Projeto/gui/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/Projeto/gui/menu_filme.py" />
+    <entry file="file://$PROJECT_DIR$/Projeto" />
+    <entry file="file://$PROJECT_DIR$/logica/usuario.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+>>>>>>> 5931f8b122ae0ee08eba6820c48b37f61262e2bf
         </state>
       </provider>
     </entry>
@@ -389,7 +425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -402,6 +437,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gui/menu_usuario.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-197">
           <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
           <folding />
@@ -409,6 +445,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logica/usuario.py">
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+>>>>>>> 5931f8b122ae0ee08eba6820c48b37f61262e2bf
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
@@ -426,8 +470,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logica/filme.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-212">
           <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="43" />
+=======
+        <state relative-caret-position="255">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/principal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 5931f8b122ae0ee08eba6820c48b37f61262e2bf
           <folding />
         </state>
       </provider>
