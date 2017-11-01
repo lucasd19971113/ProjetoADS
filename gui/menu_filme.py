@@ -93,7 +93,7 @@ def menu_buscar_c():
             op = int(input((
                 "\n(1) Buscar mais filmes por Código\n" +
                 "(0) Sair \n" +
-                "Digite sua escolha: ")))
+                "\nDigite sua escolha: ")))
 
             if op == 0:
                 run = False
