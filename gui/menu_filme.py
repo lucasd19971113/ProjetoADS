@@ -106,7 +106,7 @@ def menu_remover():
         ind = filme.remover_filme(codigo)
         if ind == False:
             print("filme nao encontrado \n")
-            op = int(input("Tentar de novo? \n(1) Sim\n(0) Não  "))
+            op = int(input("\nTentar de novo? \n(1) Sim\n(0) Não  "))
             while op != 1 and op != 0:
                 op = int(input("Opção Incorreta! - Digite novamente: "))
             if op == 0:
@@ -114,7 +114,7 @@ def menu_remover():
         else:
             print("Filme removido \n")
             op = int(input(("\n----------------\n" +
-                            "(1) Remover mais filmes\n" +
+                            "\n(1) Remover mais filmes\n" +
                             "(0) Sair \n" +
                             "\n----------------\n" +
                             "Digite sua escolha: ")))
