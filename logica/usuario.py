@@ -34,3 +34,4 @@ def remover_usuario(cpf):
 def iniciar_clientes():
     adicionar_usuario(43356795805,"André","andre.oliveria@gmail.com","12341234")
     adicionar_usuario(43356725805, "Lucas", "lucas.dias@hotmail.com", "34123412")
+                                
