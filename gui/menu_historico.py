@@ -20,7 +20,7 @@ def menu_adicionar():
         cod_filme =int (input("Digite o código do filme: "))
         historico.adicionar_historico(cpf, cod_filme)
         op = int(input(("\n----------------\n" +
-                        "(1) Adiconar mais clientes\n" +
+                        "(1) Registrar no histórico?? \n" +
                         "(0) Sair \n" +
                         "\n----------------\n"+
                         "Digite sua escolha: ")))
@@ -32,11 +32,14 @@ def menu_adicionar():
 
 
 def menu_listar():
-    print("\nListar histórico de filmes \n")
-    historicos = historico.listar_historicos()
-    for h in historicos:
-        imprimir_historicos(h)
-        menu_filme.menu_buscar_ch(h[1])
+    print("\nListar histórico de filmes de usuário por cpf: \n")
+    cpf_1 = input("CPF: ")
+    while len(cpf_1) != 11:
+        cpf_1 = input("CPF incorreto! - Digite novamente: ")
+    cpf = int(cpf_1)
+    historicos = historico.listar_historicos(cpf)
+    if historicos == True:
+        print(historicos)
         #menu_usuario.menu_buscar_h(h[0])
 
 
