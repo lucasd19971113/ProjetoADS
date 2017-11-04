@@ -4,6 +4,7 @@ from gui import menu_filme
 global cpf
 global cod_filme
 
+
 def imprimir_historicos(historico):
     print("CPF: ", historico[0])
     print("Código do filme: ",historico[1])
@@ -18,16 +19,11 @@ def menu_adicionar():
             cpf_1 = input("CPF incorreto! - Digite novamente: ")
         cpf = int(cpf_1)
         cod_filme =int (input("Digite o código do filme: "))
-        historico.adicionar_historico(cpf, cod_filme)
-        op = int(input(("\n----------------\n" +
-                        "(1) Registrar no histórico?? \n" +
-                        "(0) Sair \n" +
-                        "\n----------------\n"+
-                        "Digite sua escolha: ")))
-        while op != 1 and op!= 0:
-            op = int(input("Opção Incorreta! - Digite novamente: "))
-        if op ==0:
-            run=False
+        ind=historico.adicionar_historico(cpf, cod_filme)
+        if ind==False:
+            print("Não foi possível registrar no histórico")
+        else:
+            print("Adicionado com sucesso")
     return
 
 
