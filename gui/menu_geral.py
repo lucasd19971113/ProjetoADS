@@ -4,6 +4,9 @@ from logica import usuario
 from gui import menu_filme
 from logica import filme
 
+from gui import menu_historico
+from logica import historico
+
 def inicializar_dados():
     filme.iniciar_filmes()
     usuario.iniciar_clientes()
@@ -29,6 +32,7 @@ def mostrar_menu():
         elif (op == 2):
             menu_filme.mostrar_menu()
         elif (op == 3):
+            menu_historico.mostrar_menu()
             pass
         elif (op == 0):
             print("Saindo do programa...")
