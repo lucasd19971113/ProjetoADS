@@ -73,6 +73,34 @@ def menu_buscar():
                 run = False
 
 
+def menu_buscar_h(cpf):
+    run = True
+    while run == True:
+        clientes = usuario.buscar_usuario(cpf)
+        if clientes == False:
+            print("Cliente nao encontrado\n")
+            op = int(input(("\n----------------\n" +
+            "\n(1) Realizar nova busca\n" +
+            "(0) Sair \n" +
+            "\n----------------\n"+
+            "Digite sua escolha: ")))
+            while op != 1 and op != 0:
+                op = int(input("Opção Incorreta! - Digite novamente: "))
+            if op == 0:
+                run = False
+        else:
+            print("Cliente encontrado\n")
+            op = int(input(("\n----------------\n" +
+                            "\n(1) Realizar nova busca\n" +
+                            "(0) Sair \n" +
+                            "\n----------------\n"+
+                            "Digite sua escolha: ")))
+            while op != 1 and op != 0:
+                op = int(input("Opção Incorreta! - Digite novamente: "))
+            if op == 0:
+                run = False
+
+
 
 def menu_remover():
     run = True

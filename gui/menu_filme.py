@@ -99,6 +99,31 @@ def menu_buscar_c():
                 run = False
 
 
+
+def menu_buscar_ch(cod_filme):
+    run = True
+    while run == True:
+        filmes = filme.buscar_filme(cod_filme)
+        if filmes == False:
+            print("Filme nao encontrado\n")
+            op = int(input((
+                "\n(1) Buscar mais filmes por Código\n" +
+                "(0) Sair \n" +
+                "Digite sua escolha: ")))
+            while op != 1 and op != 0:
+                op = int(input("Opção Incorreta! - Digite novamente: "))
+            if op == 0:
+                run = False
+        else:
+            print("Filme encontrado\n")
+            op = int(input((
+                "\n(1) Buscar mais filmes por Código\n" +
+                "(0) Sair \n" +
+                "\nDigite sua escolha: ")))
+
+            if op == 0:
+                run = False
+
 def menu_remover():
     run = True
     while run == True:
