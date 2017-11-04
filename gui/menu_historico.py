@@ -1,11 +1,12 @@
 from logica import historico
 from gui import menu_usuario
 from gui import menu_filme
-
+global cpf
+global cod_filme
 
 def imprimir_historicos(historico):
     print("CPF: ", historico[0])
-    print("Código do filme: ", historico[1])
+    print("Código do filme: ",historico[1])
     print()
 
 
@@ -15,10 +16,7 @@ def menu_adicionar():
         cpf_1 = input("CPF: ")
         while len(cpf_1) != 11:
             cpf_1 = input("CPF incorreto! - Digite novamente: ")
-        global cpf
         cpf = int(cpf_1)
-
-        global cod_filme
         cod_filme =int (input("Digite o código do filme: "))
         historico.adicionar_historico(cpf, cod_filme)
         op = int(input(("\n----------------\n" +
@@ -38,11 +36,8 @@ def menu_listar():
     historicos = historico.listar_historicos()
     for h in historicos:
         imprimir_historicos(h)
-        menu_filme.menu_buscar_ch(cod_filme)
-        #menu_usuario.menu_buscar_h(cpf)
-
-
-
+        menu_filme.menu_buscar_ch(h[1])
+        #menu_usuario.menu_buscar_h(h[0])
 
 
 

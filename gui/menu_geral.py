@@ -10,6 +10,7 @@ from logica import historico
 def inicializar_dados():
     filme.iniciar_filmes()
     usuario.iniciar_clientes()
+    historico.iniciar_historico()
 def mostrar_menu():
     inicializar_dados()
     run_menu = True

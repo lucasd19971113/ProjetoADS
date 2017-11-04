@@ -1,5 +1,6 @@
 from logica import filme
 
+global teste
 codigo_geral_i = 2
 def _gerar_codigo():
     global codigo_geral_i
@@ -49,6 +50,7 @@ def menu_listar():
 
 def menu_buscar():
     run = True
+
     while run == True:
         genero = (input("Buscar por Gênero: "))
         filmes = filme.buscar_filme_g(genero)
@@ -64,6 +66,7 @@ def menu_buscar():
                 run = False
         else:
             print("Filme encontrado\n")
+
             op = int(input((
                             "\n(1) Buscar mais filmes por Gênero\n" +
                             "(0) Sair \n" +
@@ -105,6 +108,7 @@ def menu_buscar_ch(cod_filme):
     while run == True:
         filmes = filme.buscar_filme(cod_filme)
         if filmes == False:
+            teste = False
             print("Filme nao encontrado\n")
             op = int(input((
                 "\n(1) Buscar mais filmes por Código\n" +
@@ -116,6 +120,7 @@ def menu_buscar_ch(cod_filme):
                 run = False
         else:
             print("Filme encontrado\n")
+            teste = True
             op = int(input((
                 "\n(1) Buscar mais filmes por Código\n" +
                 "(0) Sair \n" +
