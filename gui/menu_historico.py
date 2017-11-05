@@ -32,8 +32,10 @@ def menu_adicionar():
                         "Digite sua escolha: ")))
         while op != 1 and op != 0:
             op = int(input("Opção Incorreta! - Digite novamente: "))
-        if op == 0:
-            run = False
+        if op == 1:
+            run = True
+        else:
+            run=False
     return
 
 
