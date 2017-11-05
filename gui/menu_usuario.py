@@ -127,7 +127,10 @@ def menu_remover():
 
 
 def menu_editar_senha():
-    senha=input("Digite sua senha: ")
+    senha_1=input("Digite sua senha: ")
+    if senha_1!= menu_geral_login.senha:
+        print("Senha inválida")
+        return
     senha_nova = input("Digite sua nova senha: ")
     while len(senha_nova) < 8:
         senha_nova = input("Sua senha deve ter no minimo 8 caracteres: ")
@@ -143,26 +146,29 @@ def menu_editar_senha():
 
 
 def menu_mostrar_cadastro():
-    run = True
-    while run == True:
-        cpf=int(input("Digite seu cpf:  "))
-        clientes = usuario.buscar_usuario(cpf)
-        if clientes == False:
-            print("Cliente nao encontrado\n")
-            op = int(input(("\n----------------\n" +
-                            "\n(1) Realizar nova busca\n" +
-                            "(0) Sair \n" +
-                            "\n----------------\n" +
-                            "Digite sua escolha: ")))
-            while op != 1 and op != 0:
-                op = int(input("Opção Incorreta! - Digite novamente: "))
-            if op == 0:
-                run = False
-        else:
-            return clientes
+    email_1= input("Digite seu e-mail:  ")
+    if email_1!= menu_geral_login.email:
+        print("E-mail inválido")
+        return
+    else:
+        ind=usuario.mostrar_usuario(email_1)
+        return ind
 
-#def menu_editar_email():
 
+def menu_editar_email():
+    email_1 = input("Digite seu e-mail: ")
+    if email_1!= menu_geral_login.email:
+        print("E-mail inválido")
+        return
+    email_novo = input("Digite seu novo e-mail: ")
+    while email_1!= email_novo:
+        email_novo = input("Confirme seu e-mail: ")
+    email_n = usuario.editar_senha(email, email_novo)
+    if email_n == False:
+        print("E-mail inválido. Tente novamente")
+    else:
+        print("E-mail modificado com sucesso!")
+        return
 
 
 def mostrar_menu_admin():
@@ -196,7 +202,7 @@ if __name__ == "__main__":
 def mostrar_menu_cliente():
     run = True
     menu_usuario = ("\n----------------\n" +
-            "(1) Editar e-mail Cliente por CPF \n" +
+            "(1) Editar e-mail \n" +
             "(2) Editar senha \n" +
             "(3) Meu cadastro \n"
             "(0) Voltar\n" +
@@ -212,7 +218,7 @@ def mostrar_menu_cliente():
         elif (op == 2):
             menu_editar_senha()
         elif (op == 3):
-            menu_buscar()
+            menu_mostrar_cadastro()
         elif (op == 4):
             menu_remover()
         elif (op == 0):

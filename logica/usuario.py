@@ -63,8 +63,8 @@ def login_admin(email,senha):
         else:
             return True
 
-def mostrar_usuario(cpf):
-    ind = [(index, row.index(cpf)) for index, row in enumerate(clientes) if cpf in row]
+def mostrar_usuario(email):
+    ind = [(index, row.index(email)) for index, row in enumerate(clientes) if email in row]
     if ind == []:
         return False
     else:
@@ -74,7 +74,7 @@ def mostrar_usuario(cpf):
         print('Nome: ', clientes[pos][1])
         print('E-mail: ', clientes[pos][2])
         print('Senha: ', clientes[pos][3],'\n')
-        if clientes[0] == cpf:
+        if clientes[0] == email:
             return clientes[0]
 
 def editar_senha(senha,nova_senha):

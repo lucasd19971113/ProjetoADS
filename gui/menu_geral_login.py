@@ -13,7 +13,9 @@ def inicializar_dados():
 
 
 def menu_login_usuario():
+    global email
     email = input("Seu email: ")
+    global senha
     senha = input("Sua senha: ")
     ind = usuario.login_cliente(email,senha)
     if ind == False:
@@ -23,9 +25,11 @@ def menu_login_usuario():
 
 
 def menu_login_admin():
-    email = input("Seu email: ")
-    senha =input("Sua senha: ")
-    ind = usuario.login_admin(email,senha)
+    global email_a
+    email_a = input("Seu email: ")
+    global senha_a
+    senha_a =input("Sua senha: ")
+    ind = usuario.login_admin(email_a,senha_a)
     if ind == False:
         print("Login ou senha inválidos. Tente novamente -----")
     else:
