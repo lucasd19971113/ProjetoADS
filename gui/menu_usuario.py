@@ -125,13 +125,40 @@ def menu_remover():
                 run = False
 
 
-def mostrar_menu():
+
+def mostrar_menu_admin():
     run = True
     menu_usuario = ("\n----------------\n" +
             "(1) Adicionar novo Cliente \n" +
             "(2) Listar Cliente \n" +
             "(3) Buscar Cliente por CPF \n" +
             "(4) Remover Cliente \n" +
+            "(0) Voltar\n" +
+            "----------------")
+
+    while (run):
+        print(menu_usuario)
+        op = int(input("Digite sua escolha: "))
+
+        if (op == 1):
+            menu_adicionar()
+        elif (op == 2):
+            menu_listar()
+        elif (op == 3):
+            menu_buscar()
+        elif (op == 4):
+            menu_remover()
+        elif (op == 0):
+            run = False
+
+if __name__ == "__main__":
+    principal()
+
+def mostrar_menu_cliente():
+    run = True
+    menu_usuario = ("\n----------------\n" +
+            "(1) Editar e-mail Cliente por CPF \n" +
+            "(2) Editar senha \n" +
             "(0) Voltar\n" +
             "----------------")
 
@@ -156,3 +183,4 @@ def mostrar_menu():
 
 if __name__ == "__main__":
     principal()
+

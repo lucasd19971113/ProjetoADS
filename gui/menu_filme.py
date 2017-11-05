@@ -153,7 +153,8 @@ def menu_remover():
             if op == 0:
                 run = False
 
-def mostrar_menu():
+
+def mostrar_menu_admin():
     run = True
     menu_filme = ("\n----------------\n" +
             "(1) Adicionar Filme \n" +
@@ -181,8 +182,33 @@ def mostrar_menu():
         elif (op == 0):
             run = False
 
-#Chamar menu;
 if __name__ == "__main__":
     principal()
+
+def mostrar_menu_cliente():
+    run = True
+    menu_filme = ("\n----------------\n" +
+            "(1) Listar Filme \n" +
+            "(2) Buscar Filme por gênero\n" +
+            "(3) Buscar Filme por código\n" +
+            "(0) Voltar\n" +
+            "----------------")
+
+    while (run):
+        print(menu_filme)
+        op = int(input("Digite sua escolha: "))
+
+        if (op == 1):
+            menu_listar()
+        elif (op == 2):
+            menu_buscar()
+        elif (op == 3):
+            menu_buscar_c()
+        elif (op == 0):
+            run = False
+
+if __name__ == "__main__":
+    principal()
+
 
 
