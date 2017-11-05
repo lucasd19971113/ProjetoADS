@@ -25,7 +25,7 @@ def menu_adicionar():
             senha_1 = input("Confirme sua senha: ")
         usuario.adicionar_usuario(cpf, nome, email ,senha_1)
         op = int(input(("\n----------------\n" +
-                        "(1) Adiconar mais clientes\n" +
+                        "(1) Cadastrar mais usuários?\n" +
                         "(0) Sair \n" +
                         "\n----------------\n"+
                         "Digite sua escolha: ")))

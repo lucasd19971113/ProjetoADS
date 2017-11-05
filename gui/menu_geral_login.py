@@ -1,5 +1,6 @@
 from gui import menu_geral
 from logica import usuario
+from gui import menu_usuario
 
 from logica import filme
 
@@ -37,6 +38,7 @@ def mostrar_menu():
     menu = ("\n----------------\n" +
             "(1) Login Usuário \n" +
             "(2) Login Admin \n" +
+            "(3) Cadastre-se \n" +
             "(0) Sair\n" +
             "----------------")
 
@@ -50,7 +52,7 @@ def mostrar_menu():
         elif (op == 2):
             menu_login_admin()
         elif (op == 3):
-            pass
+            menu_usuario.menu_adicionar()
         elif (op == 0):
             print("Saindo do programa...")
             run_menu = False
