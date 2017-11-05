@@ -2,6 +2,7 @@ global filmes
 filmes=[]
 
 
+
 codigo_geral_i = 0
 def _gerar_codigo():
     global codigo_geral_i

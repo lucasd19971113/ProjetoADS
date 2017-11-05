@@ -5,6 +5,7 @@ historicos=[]
 
 
 
+
 def registrar_filme_assistido(cpf,cod_filme):
     ind = [(index, row.index(cpf)) for index, row in enumerate(usuario.clientes) if cpf in row]
     if ind == []:

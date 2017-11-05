@@ -5,6 +5,7 @@ from gui import menu_usuario
 from logica import filme
 
 
+
 def inicializar_dados():
     filme.iniciar_filmes()
     usuario.iniciar_clientes()

@@ -6,6 +6,7 @@ from gui import menu_filme
 
 
 
+
 '''def mostrar_menu():
     run = True
     menu_usuario = ("\n----------------\n" +

@@ -154,13 +154,12 @@ def menu_editar_email():
     email_novo = input("Digite seu novo e-mail: ")
     while email_1!= email_novo:
         email_novo = input("Confirme seu e-mail: ")
-    if email_novo == email_1:
-        email_n=usuario.editar_email(email_1,email_novo)
-        if email_n== False:
-            print("E-mail invalido")
-        else:
-            print("E-mail modificado com sucesso")
-            return
+    email_n=usuario.editar_email(email_1,email_novo)
+    if email_n==True:
+        print("Email modificado com sucesso!")
+        return
+    else:
+        print("Tente de novo")
 
 #-----------------------------------------------------------------------------------------------------------
 

@@ -5,6 +5,7 @@ global cpf
 global cod_filme
 
 
+
 def imprimir_historicos(historico):
     print("CPF: ", historico[0])
     print("Código do filme: ",historico[1])

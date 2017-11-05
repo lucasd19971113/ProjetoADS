@@ -2,6 +2,7 @@ global clientes
 clientes=[]
 
 
+
 def adicionar_usuario(cpf, nome,email,senha):
     cliente=[cpf,nome,email,senha]
     clientes.append(cliente)
