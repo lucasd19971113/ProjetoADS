@@ -125,8 +125,22 @@ def menu_remover():
                 run = False
 
 def menu_editar_senha():
+    senha=input("Digite sua senha: ")
+    senha_nova = input("Digite sua nova senha: ")
+    while len(senha_nova) < 8:
+        senha_nova = input("Sua senha deve ter no minimo 8 caracteres: ")
+    senha_1 = input("Confirme sua senha: ")
+    while senha_1 != senha_nova:
+        senha_1 = input("Confirme sua senha: ")
+    nova_senha = usuario.editar_senha(senha,senha_1)
+    if nova_senha == False:
+        print("Senha inválida. Tente novamente")
+    else:
+        print("Senha modificada com sucesso!")
+        return
 
-def menu_editar_email():
+
+#def menu_editar_email():
 
 
 
@@ -174,7 +188,7 @@ def mostrar_menu_cliente():
         if (op == 1):
             menu_adicionar()
         elif (op == 2):
-            menu_listar()
+            menu_editar_senha()
         elif (op == 3):
             menu_buscar()
         elif (op == 4):

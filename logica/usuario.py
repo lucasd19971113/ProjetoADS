@@ -63,6 +63,14 @@ def login_admin(email,senha):
         else:
             return True
 
+def editar_senha(senha,nova_senha):
+    senha_1 = [(index, row.index(senha)) for index, row in enumerate(clientes) if senha in row]
+    if senha_1 ==[]:
+        return False
+    else:
+        linha=senha_1[0][0]
+        clientes[linha][3]=nova_senha
+        return True
 
 
 
