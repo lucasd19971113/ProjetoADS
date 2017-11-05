@@ -24,10 +24,7 @@ def menu_adicionar():
             print("Não foi possível registrar no histórico")
         else:
             print("Adicionado com sucesso")
-<<<<<<< HEAD
             run=False
-=======
-
         op = int(input(("\n----------------\n" +
                         "(1) Adicionar mais \n" +
                         "(0) Sair \n" +
@@ -37,7 +34,6 @@ def menu_adicionar():
             op = int(input("Opção Incorreta! - Digite novamente: "))
         if op == 0:
             run = False
->>>>>>> 4be64372a3ca3dd7a6ea0c7ef54ad9bf9621bded
     return
 
 
