@@ -1,8 +1,8 @@
-from gui import menu_geral
+from gui import menu_geral_login
 
 
 def principal():
-    menu_geral.mostrar_menu()
+    menu_geral_login.mostrar_menu()
 
 if __name__ == "__main__":
     principal()
