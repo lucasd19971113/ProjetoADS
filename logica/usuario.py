@@ -86,6 +86,14 @@ def editar_senha(senha,nova_senha):
         clientes[linha][3]=nova_senha
         return True
 
+def editar_email(email,novo_email):
+    email_1 = [(index, row.index(email)) for index, row in enumerate(clientes) if email in row]
+    if email_1==[]:
+        return False
+    else:
+        linha=email_1[0][0]
+        clientes[linha][2]=novo_email
+        return True
 
 
 def iniciar_clientes():

@@ -128,8 +128,8 @@ def menu_remover():
 #------------- Somente email e senha utilizados no login podem ser modificados ----------------------
 
 def menu_editar_senha():
-    senha_1=input("Digite sua senha: ")
-    if senha_1!= menu_geral_login.senha:
+    senha_0=input("Digite sua senha: ")
+    if senha_0!= menu_geral_login.senha:
         print("Senha inválida")
         return
     senha_nova = input("Digite sua nova senha: ")
@@ -137,8 +137,8 @@ def menu_editar_senha():
         senha_nova = input("Sua senha deve ter no minimo 8 caracteres: ")
     senha_1 = input("Confirme sua senha: ")
     while senha_1 != senha_nova:
-        senha_1 = input("Confirme sua senha: ")
-    nova_senha = usuario.editar_senha(senha,senha_1)
+        senha_nova = input("Confirme sua senha: ")
+    nova_senha = usuario.editar_senha(senha_0,senha_nova)
     if nova_senha == False:
         print("Senha inválida. Tente novamente")
     else:
@@ -154,12 +154,13 @@ def menu_editar_email():
     email_novo = input("Digite seu novo e-mail: ")
     while email_1!= email_novo:
         email_novo = input("Confirme seu e-mail: ")
-    email_n = usuario.editar_senha(email, email_novo)
-    if email_n == False:
-        print("E-mail inválido. Tente novamente")
-    else:
-        print("E-mail modificado com sucesso!")
-        return
+    if email_novo == email_1:
+        email_n=usuario.editar_email(email_1,email_novo)
+        if email_n== False:
+            print("E-mail invalido")
+        else:
+            print("E-mail modificado com sucesso")
+            return
 
 #-----------------------------------------------------------------------------------------------------------
 
