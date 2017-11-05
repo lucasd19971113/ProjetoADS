@@ -124,6 +124,10 @@ def menu_remover():
             if op == 0:
                 run = False
 
+def menu_editar_senha():
+
+def menu_editar_email():
+
 
 
 def mostrar_menu_admin():
