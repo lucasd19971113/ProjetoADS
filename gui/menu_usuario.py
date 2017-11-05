@@ -125,6 +125,7 @@ def menu_remover():
             if op == 0:
                 run = False
 
+#------------- Somente email e senha utilizados no login podem ser modificados ----------------------
 
 def menu_editar_senha():
     senha_1=input("Digite sua senha: ")
@@ -145,16 +146,6 @@ def menu_editar_senha():
         return
 
 
-def menu_mostrar_cadastro():
-    email_1= input("Digite seu e-mail:  ")
-    if email_1!= menu_geral_login.email:
-        print("E-mail inválido")
-        return
-    else:
-        ind=usuario.mostrar_usuario(email_1)
-        return ind
-
-
 def menu_editar_email():
     email_1 = input("Digite seu e-mail: ")
     if email_1!= menu_geral_login.email:
@@ -169,6 +160,17 @@ def menu_editar_email():
     else:
         print("E-mail modificado com sucesso!")
         return
+
+#-----------------------------------------------------------------------------------------------------------
+
+def menu_mostrar_cadastro():
+    email_1= input("Digite seu e-mail:  ")
+    if email_1!= menu_geral_login.email:
+        print("E-mail inválido")
+        return
+    else:
+        ind=usuario.mostrar_usuario(email_1)
+        return ind
 
 
 def mostrar_menu_admin():
