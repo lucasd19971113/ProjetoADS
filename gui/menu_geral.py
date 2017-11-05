@@ -1,5 +1,7 @@
 from gui import menu_usuario
 
+from gui import menu_historico
+
 from gui import menu_filme
 
 
@@ -56,7 +58,7 @@ def mostrar_menu_admin():
         elif (op == 2):
             menu_filme.mostrar_menu_admin()
         elif (op == 3):
-            pass
+            menu_historico.mostrar_menu()
         elif (op == 0):
             print("Voltar")
             run_menu = False
@@ -87,7 +89,7 @@ def mostrar_menu_cliente():
         elif (op == 2):
             menu_filme.mostrar_menu_cliente()
         elif (op == 3):
-            pass
+            menu_historico.mostrar_menu()
         elif (op == 0):
             print("Voltar")
             run_menu = False

@@ -18,7 +18,7 @@ def menu_login_usuario():
     if ind == False:
         print("Login ou senha inválidos. Tente novamente -----")
     else:
-        return menu_geral_login.mostrar_menu_cliente()
+        return menu_geral.mostrar_menu_cliente()
 
 
 def menu_login_admin():
@@ -28,7 +28,7 @@ def menu_login_admin():
     if ind == False:
         print("Login ou senha inválidos. Tente novamente -----")
     else:
-        return menu_geral_login.mostrar_menu_admin()
+        return menu_geral.mostrar_menu_admin()
 
 def mostrar_menu():
     inicializar_dados()
