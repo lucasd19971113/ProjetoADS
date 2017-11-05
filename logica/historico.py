@@ -12,11 +12,8 @@ def adicionar_historico(cpf,cod_filme):
     ind_1 = [(index, row.index(cod_filme)) for index, row in enumerate(filme.filmes) if cod_filme in row]
     if ind_1 == []:
         return False
-    if ind == cpf and ind_1 == cod_filme:
-
-        historico=[cpf,cod_filme]
-        historicos.append(historico)
-        return True
+    else:
+        historicos.append([cpf,cod_filme])
 
 def listar_historicos(cpf):
     ind = [(index, row.index(cpf)) for index, row in enumerate(historicos) if cpf in row]

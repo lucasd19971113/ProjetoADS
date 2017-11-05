@@ -24,6 +24,7 @@ def menu_adicionar():
             print("Não foi possível registrar no histórico")
         else:
             print("Adicionado com sucesso")
+            run=False
     return
 
 
