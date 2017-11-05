@@ -19,7 +19,7 @@ def menu_adicionar():
             cpf_1 = input("CPF incorreto! - Digite novamente: ")
         cpf = int(cpf_1)
         cod_filme =int (input("Digite o código do filme: "))
-        ind=historico.adicionar_historico(cpf, cod_filme)
+        ind=historico.registrar_filme_assistido(cpf, cod_filme)
         if ind==False:
             print("Não foi possível assistir filme")
         else:
@@ -43,7 +43,7 @@ def menu_listar():
     while len(cpf_1) != 11:
         cpf_1 = input("CPF incorreto! - Digite novamente: ")
     cpf = int(cpf_1)
-    historicos = historico.listar_historicos(cpf)
+    historicos = historico.listar_filmes_assistidos(cpf)
     if historicos == True:
         print(historicos)
 

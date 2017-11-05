@@ -5,7 +5,7 @@ historicos=[]
 
 
 
-def adicionar_historico(cpf,cod_filme):
+def registrar_filme_assistido(cpf,cod_filme):
     ind = [(index, row.index(cpf)) for index, row in enumerate(usuario.clientes) if cpf in row]
     if ind == []:
         return False
@@ -15,7 +15,7 @@ def adicionar_historico(cpf,cod_filme):
     else:
         historicos.append([cpf,cod_filme])
 
-def listar_historicos(cpf):
+def listar_filmes_assistidos(cpf):
     ind = [(index, row.index(cpf)) for index, row in enumerate(historicos) if cpf in row]
     if ind == []:
         return False
