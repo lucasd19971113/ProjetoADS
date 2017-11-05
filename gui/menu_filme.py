@@ -1,6 +1,6 @@
 from logica import filme
 
-global teste
+
 codigo_geral_i = 2
 def _gerar_codigo():
     global codigo_geral_i

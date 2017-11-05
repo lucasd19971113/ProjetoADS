@@ -36,7 +36,7 @@ def menu_listar():
     historicos = historico.listar_historicos(cpf)
     if historicos == True:
         print(historicos)
-        #menu_usuario.menu_buscar_h(h[0])
+
 
 
 
