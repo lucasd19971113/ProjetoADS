@@ -163,9 +163,6 @@ def mostrar_menu_cliente():
             "----------------")
 
 
-
-
-
     while (run):
         print(menu_usuario)
         op = int(input("Digite sua escolha: "))
