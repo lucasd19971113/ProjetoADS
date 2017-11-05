@@ -1,4 +1,5 @@
 from logica import usuario
+from  gui import menu_geral_login
 
 def imprimir_cliente(cliente):
     print("\nCPF: ", cliente[0])
@@ -73,7 +74,7 @@ def menu_buscar():
                 run = False
 
 
-def menu_buscar_h(cpf):
+'''def menu_buscar_h(cpf):
     run = True
     while run == True:
         clientes = usuario.buscar_usuario(cpf)
@@ -98,7 +99,7 @@ def menu_buscar_h(cpf):
             while op != 1 and op != 0:
                 op = int(input("Opção Incorreta! - Digite novamente: "))
             if op == 0:
-                run = False
+                run = False'''
 
 
 
@@ -124,6 +125,7 @@ def menu_remover():
             if op == 0:
                 run = False
 
+
 def menu_editar_senha():
     senha=input("Digite sua senha: ")
     senha_nova = input("Digite sua nova senha: ")
@@ -139,6 +141,25 @@ def menu_editar_senha():
         print("Senha modificada com sucesso!")
         return
 
+
+def menu_mostrar_cadastro():
+    run = True
+    while run == True:
+        cpf=int(input("Digite seu cpf:  "))
+        clientes = usuario.buscar_usuario(cpf)
+        if clientes == False:
+            print("Cliente nao encontrado\n")
+            op = int(input(("\n----------------\n" +
+                            "\n(1) Realizar nova busca\n" +
+                            "(0) Sair \n" +
+                            "\n----------------\n" +
+                            "Digite sua escolha: ")))
+            while op != 1 and op != 0:
+                op = int(input("Opção Incorreta! - Digite novamente: "))
+            if op == 0:
+                run = False
+        else:
+            return clientes
 
 #def menu_editar_email():
 
@@ -177,6 +198,7 @@ def mostrar_menu_cliente():
     menu_usuario = ("\n----------------\n" +
             "(1) Editar e-mail Cliente por CPF \n" +
             "(2) Editar senha \n" +
+            "(3) Meu cadastro \n"
             "(0) Voltar\n" +
             "----------------")
 
@@ -186,7 +208,7 @@ def mostrar_menu_cliente():
         op = int(input("Digite sua escolha: "))
 
         if (op == 1):
-            menu_adicionar()
+            menu_editar_email()
         elif (op == 2):
             menu_editar_senha()
         elif (op == 3):
