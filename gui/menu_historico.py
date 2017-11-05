@@ -21,12 +21,12 @@ def menu_adicionar():
         cod_filme =int (input("Digite o código do filme: "))
         ind=historico.adicionar_historico(cpf, cod_filme)
         if ind==False:
-            print("Não foi possível registrar no histórico")
+            print("Não foi possível assistir filme")
         else:
-            print("Adicionado com sucesso")
+            print("Operação realizada")
             run=False
         op = int(input(("\n----------------\n" +
-                        "(1) Adicionar mais \n" +
+                        "(1) Assistir mais \n" +
                         "(0) Sair \n" +
                         "\n----------------\n" +
                         "Digite sua escolha: ")))
@@ -38,7 +38,7 @@ def menu_adicionar():
 
 
 def menu_listar():
-    print("\nListar histórico de filmes de usuário por cpf: \n")
+    print("\nListar histórico de filmes assistidos de usuário por cpf: \n")
     cpf_1 = input("CPF: ")
     while len(cpf_1) != 11:
         cpf_1 = input("CPF incorreto! - Digite novamente: ")
@@ -55,7 +55,7 @@ def menu_listar():
 def mostrar_menu():
     run = True
     menu_historico = ("\n----------------\n" +
-            "(1) Registrar Filme assistido \n" +
+            "(1) Assistir \n" +
             "(2) Listar filmes assistidos \n" +
             "(0) Voltar\n" +
             "----------------")
